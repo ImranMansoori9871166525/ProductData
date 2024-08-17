@@ -1,4 +1,5 @@
 {
+  "extends": ["./path/to/base/tsconfig.base.json", "./path/to/another/base/tsconfig.extra.json"],
   "compilerOptions": {
     "target": "esnext",
     "jsx": "react",
@@ -8,12 +9,7 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": [
-    "**/*.ts",
-    "**/*.tsx"
-  ],
-  "exclude": [
-    "node_modules"
-  ],
-  "extends": "expo/tsconfig.base"
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }
+
